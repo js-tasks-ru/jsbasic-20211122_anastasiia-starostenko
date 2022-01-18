@@ -6,6 +6,7 @@ export default class ProductCard {
   
   renderProductCard() {
     this.elem = document.createElement('div');
+    this.elem.classList.add('card')
     let price = '€' + this.product.price.toFixed(2);
     this.elem.innerHTML = `<div class="card__top">
                               <img src="/assets/images/products/${this.product.image}" class="card__image" alt="product">
