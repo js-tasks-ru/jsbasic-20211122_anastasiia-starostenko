@@ -64,7 +64,6 @@ export default class StepSlider {
     if(thumb){
       let progress = this.elem.querySelector('.slider__progress');
       let transformFor = (event.clientX - this.elem.getBoundingClientRect().left) / this.elem.offsetWidth;
-debugger
       if (transformFor < 0) { transformFor = 0; }
       if (transformFor > 1) { transformFor = 1; }
 
