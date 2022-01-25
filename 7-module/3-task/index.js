@@ -20,7 +20,6 @@ export default class StepSlider {
           let item = document.createElement('span');
           this.elem.querySelector('.slider__steps').append(item);
         }
-        debugger
         this.elem.querySelector('.slider__steps').children[0].classList.add('slider__step-active');
   }
 
